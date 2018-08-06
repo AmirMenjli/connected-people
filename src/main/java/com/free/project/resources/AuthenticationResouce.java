@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
 @RestController
 public class AuthenticationResouce {
-    @RequestMapping("/")
-    public String index() {
-        return "Connected People!";
-
-    }
+//    @RequestMapping("/")
+//    public String index() {
+//        return "Connected People!";
+//
+//    }
 
     @GetMapping("/authenticate")
     public ResponseEntity<User> authenticateUser(){
